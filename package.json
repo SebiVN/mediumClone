@@ -23,7 +23,7 @@
     "db:run": "npm run typeorm migration:run",
     "db:revert": "npm run typeorm migration:revert",
     "db:seed": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config src/ormseedconfig.ts migration:run",
-    "deploy": "npm ci && npm run build &&npm run start:prod"
+    "deploy": "npm ci && npm install && npm run build && npm run start:prod"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
